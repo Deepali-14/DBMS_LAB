@@ -1,0 +1,4 @@
+SELECT LAST_NAME, HIRE_DATE,
+       TO_CHAR(NEXT_DAY(ADD_MONTHS(HIRE_DATE, 6),'MONDAY'),
+       ' fmDay, "the" Ddspth "of" Month, YYYY"." ') REVIEW
+FROM EMPLOYEES;
